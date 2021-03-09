@@ -1,0 +1,16 @@
+.field-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: blue;
+  color: white;
+}
+
+.field-row {
+  display: flex;
+}
+
+.field-tile {
+  height: 64px;
+  width: 64px;
+  border: 1px dashed white;
+}

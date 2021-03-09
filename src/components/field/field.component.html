@@ -1,0 +1,13 @@
+<div
+  class="field-container">
+  <div
+    *ngFor="let row of data"
+    class="field-row"
+  >
+    <tile-cmp
+      *ngFor="let tile of row"
+      [tileNo]="tile"
+      class="field-tile"
+    ></tile-cmp><br />
+  </div>
+</div>
