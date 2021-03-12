@@ -1,3 +1,7 @@
-<div [ngStyle]="{ backgroundColor: tileType}" class="tile-container">
+<div
+  (mouseover)="emitTilePosOnHover(tilePos)"
+  (click)="updateTileTypeOnClick(tilePos)"
+  [ngStyle]="{ backgroundColor: tileType}"
+  class="tile-container">
   <img class="item-container" [src]="tileType">
 </div>

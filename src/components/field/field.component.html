@@ -1,12 +1,16 @@
 <div
   class="field-container">
+  <entity-cmp></entity-cmp>
   <div
-    *ngFor="let row of data"
+    *ngFor="let row of data; index as x_idx"
     class="field-row"
   >
     <tile-cmp
-      *ngFor="let tile of row"
+      *ngFor="let tile of row; index as y_idx"
+      (emitTilePos)="updateCurrentSelectedTile($event)"
+      (updateTileType)="updateCurrentSelectedTileType($event)"
       [tileNo]="tile"
+      [tilePos]="{x: x_idx, y: y_idx}"
       class="field-tile"
     ></tile-cmp><br />
   </div>

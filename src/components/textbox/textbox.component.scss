@@ -1,10 +1,13 @@
 .textbox-container {
+  font-family: Arial;
+  font-size: 2.5rem;
   position: fixed;
   margin-left: 10vw;
   bottom: 30px;
   width: 80vw;
   height: 200px;
-  border: 3px solid white;
+  border: 4px solid lightgray;
+  border-radius: 10px;
   background-color: black;
 }
 

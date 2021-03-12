@@ -5,5 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './textbox.component.html',
   styleUrls: ['./textbox.component.scss']
 })
-export class TextboxComponent {}
+export class TextboxComponent {
+  text: string = 'Welcome...'
+}
 

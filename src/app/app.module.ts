@@ -7,13 +7,15 @@ import {TextboxComponent} from '../components/textbox/textbox.component';
 import {TextboxService} from '../components/textbox/textbox.service';
 import {FieldComponent} from '../components/field/field.component';
 import {TileComponent} from '../components/tile/tile.component';
+import {EntityComponent} from '../components/entity/entity.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TextboxComponent,
     FieldComponent,
-    TileComponent
+    TileComponent,
+    EntityComponent
   ],
   imports: [
     BrowserModule,
